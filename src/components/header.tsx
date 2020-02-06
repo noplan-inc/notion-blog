@@ -29,6 +29,16 @@ export default ({ titlePre = '' }) => {
         <meta name="twitter:site" content="@_ijjk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics -->*/}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-70411016-12"
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'UA-70411016-12');
+        </script>
       </Head>
       <ul>
         {navItems.map(({ label, page, link }) => (
